@@ -19,6 +19,8 @@ Running the Blockchain demo
    1. This request adds new blocks to the chain. You will need to add a body to the HTTP message.
       1. Select Body under the url, then make sure the left dropdown says *raw* and dropdown to the right says *JSON*
       2. Put this string in the body: *{"data":"ThisIsTheSecondBlock"}*
+![image](https://user-images.githubusercontent.com/16611773/166111078-9fc43565-fd6d-49b5-9522-cb387c6f3eda.png)
+
 6. In the first Git Bash terminal, run this command *npm run dev*.
 7. In the second Git Bash terminal, run this command *HTTP_PORT=3002 P2P_PORT=5002 PEERS=ws://localhost:5001 npm run dev*
 8. Now you have set up the basis for a Peer-to-peer architecture. You will now need to ensure that you can see both terminals and your Postman instance at the same time. When you do a request in post man, things are going to happen in your terminals.
